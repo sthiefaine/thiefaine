@@ -2,17 +2,13 @@
 import { NextRequest, NextResponse } from "next/server";
 
 export const GET = async (request: NextRequest) => {
-  console.log(request);
-  return new NextResponse(
-    "Hello, world!" +
-      request?.geo?.latitude +
-      request?.geo?.longitude +
-      request.headers.get("X-Forwarded-For") +
-      request.headers.get("x-latitude") +
-      request.headers.get("x-longitude")
-  );
-  const lat = request?.geo?.latitude;
-  const long = request?.geo?.longitude;
+  const parisMock = {
+    latitude: 48.8566,
+    longitude: 2.3522,
+  };
+
+  const lat = request.headers.get("x-latitude") ?? parisMock.latitude;
+  const long = request.headers.get("x-longitude") ?? parisMock.longitude;
 
   if (!lat || !long) {
     return;
