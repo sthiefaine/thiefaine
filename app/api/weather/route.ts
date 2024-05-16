@@ -7,7 +7,9 @@ export const GET = async (request: NextRequest) => {
     "Hello, world!" +
       request?.geo?.latitude +
       request?.geo?.longitude +
-      request.headers.get("X-Forwarded-For")
+      request.headers.get("X-Forwarded-For") +
+      request.headers.get("x-latitude") +
+      request.headers.get("x-longitude")
   );
   const lat = request?.geo?.latitude;
   const long = request?.geo?.longitude;
