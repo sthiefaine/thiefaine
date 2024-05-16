@@ -9,7 +9,14 @@ export default async function CV() {
   return (
     <>
       <PageTitle>CV</PageTitle>
-      <main>
+      <main
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <Image src={urlCvImage} width={400} height={300} alt="CV" />
       </main>
       <Card
