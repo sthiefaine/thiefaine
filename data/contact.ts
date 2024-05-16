@@ -3,7 +3,7 @@ import { CardWithIDType } from "@/types";
 export const contactData: CardWithIDType[] = [
   {
     id: 1,
-    title: "Watsapp",
+    title: "WhatsApp",
     url: process.env.URL_WHATSAPP,
     image: "/icons/contact/whatsapp.png",
     color: "rgb(37, 211, 102)",
@@ -17,7 +17,7 @@ export const contactData: CardWithIDType[] = [
   },
   {
     id: 3,
-    title: "Linkedin",
+    title: "LinkedIn",
     url: "https://www.linkedin.com/in/thiefainesimonnou/",
     image: "/icons/contact/linkedin.png",
     color: "rgb(10, 102, 194)",
