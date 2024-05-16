@@ -1,0 +1,72 @@
+[
+  {
+    "id": "git",
+    "name": "Git",
+    "url": "https://git-scm.com/"
+  },
+  {
+    "id": "javascript",
+    "name": "JavaScript",
+    "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+  },
+  {
+    "id": "typescript",
+    "name": "TypeScript",
+    "url": "https://www.typescriptlang.org/"
+  },
+  {
+    "id": "react",
+    "name": "React",
+    "url": "https://reactjs.org/"
+  },
+  {
+    "id": "angularjs",
+    "name": "Angular",
+    "url": "https://angular.io/"
+  },
+  {
+    "id": "tailwindcss",
+    "name": "Tailwind CSS",
+    "url": "https://tailwindcss.com/"
+  },
+  {
+    "id": "sass",
+    "name": "Sass",
+    "url": "https://sass-lang.com/"
+  },
+  {
+    "id": "nodejs",
+    "name": "Node.js",
+    "url": "https://nodejs.org/"
+  },
+  {
+    "id": "express",
+    "name": "Express",
+    "url": "https://expressjs.com/"
+  },
+  {
+    "id": "redux",
+    "name": "Redux",
+    "url": "https://redux.js.org/"
+  },
+  {
+    "id": "mysql",
+    "name": "MySQL",
+    "url": "https://www.mysql.com/"
+  },
+  {
+    "id": "postgresql",
+    "name": "PostgreSQL",
+    "url": "https://www.postgresql.org/"
+  },
+  {
+    "id": "jestjsio",
+    "name": "Jest",
+    "url": "https://jestjs.io/"
+  },
+  {
+    "id": "nextjs",
+    "name": "Next.js",
+    "url": "https://nextjs.org/"
+  }
+]
