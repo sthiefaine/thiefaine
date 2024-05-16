@@ -14,6 +14,8 @@ export default function Header() {
           alt="Thiefaine"
           width={80}
           height={80}
+          priority={true}
+          quality={100}
         />
         <span className={styles.informations}>
           <h1 className={styles.title}>Thiefaine Simonnou</h1>
