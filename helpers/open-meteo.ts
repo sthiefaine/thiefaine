@@ -54,9 +54,9 @@ export function getWeatherEmoji(weatherData: WeatherData) {
     // Clear sky
     0: { emoji: isDay ? "☀️" : "🌕", description: "Ciel dégagé" },
     // Mostly clear
-    1: { emoji: isDay ? "🌤️" : "🌕", description: "Majoritairement dégagé" },
+    1: { emoji: isDay ? "🌤️" : "🌖", description: "Majoritairement dégagé" },
     // Partly cloudy
-    2: { emoji: isDay ? "⛅" : "🌕", description: "Partiellement nuageux" },
+    2: { emoji: isDay ? "⛅" : "🌑", description: "Partiellement nuageux" },
     // Cloudy
     3: { emoji: "☁️", description: "Nuageux" },
     // Fog
@@ -102,7 +102,7 @@ export function getWeatherEmoji(weatherData: WeatherData) {
     // Heavy Snow Shower
     86: { emoji: "🌨️", description: "Forte averses de neige" },
     // Thunderstorm
-    95: { emoji: "⛈️", description: "Orage" },
+    95: { emoji: "🌩️", description: "Orage" },
     // Hailstorm
     96: { emoji: "⛈️", description: "Chute de grêle" },
     // Heavy Hailstorm
@@ -112,7 +112,7 @@ export function getWeatherEmoji(weatherData: WeatherData) {
   return (
     weatherEmojis[weatherCode] || {
       emoji: "",
-      description: "0",
+      description: "",
     }
   );
 }

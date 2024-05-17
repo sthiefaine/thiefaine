@@ -7,7 +7,7 @@ import {
   weatherResultMock,
 } from "@/helpers/open-meteo";
 import { headers } from "next/headers";
-import { CardWeather } from "../Card/cardWeather";
+import { CardWeather } from "../../Card/cardWeather";
 import { Suspense } from "react";
 
 export async function Weather() {
