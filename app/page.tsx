@@ -14,6 +14,16 @@ export default async function Home() {
         ))}
         <Weather />
       </main>
+      <a
+        style={{
+          position: "fixed",
+          bottom: "2px",
+          marginLeft: "20%",
+        }}
+        href="https://storyset.com/business"
+      >
+        Business illustrations by Storyset
+      </a>
     </>
   );
 }
