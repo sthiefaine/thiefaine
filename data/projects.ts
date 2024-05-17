@@ -20,7 +20,7 @@ export const projectsData: CardWithIDType[] = [
   {
     id: 3,
     title: "WhatsNumber",
-    url: "https://whatsnumber.netlify.app/",
+    url: "https://whatsnumber.vercel.app/",
     description:
       "Parlez sur WhatsApp avec un numéro sans l'ajouter à vos contacts.",
     image: "/icons/projects/whatsnumber.jpg",
