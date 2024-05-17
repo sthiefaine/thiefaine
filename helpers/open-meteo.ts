@@ -111,7 +111,7 @@ export function getWeatherEmoji(weatherData: WeatherData) {
 
   return (
     weatherEmojis[weatherCode] || {
-      emoji: "",
+      emoji: weatherCode.toString(),
       description: "",
     }
   );
