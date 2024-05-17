@@ -14,7 +14,6 @@ export function Tech() {
       <div>
         {techList.map((tech) => (
           <Link
-            inert
             className={style.link}
             key={tech.id}
             href={tech.url}
@@ -34,7 +33,6 @@ export function Tech() {
       <div>
         {techList.map((tech) => (
           <Link
-            inert
             className={style.link}
             key={tech.id}
             href={tech.url}
