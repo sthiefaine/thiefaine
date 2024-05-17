@@ -56,9 +56,9 @@ export function getWeatherEmoji(weatherData: WeatherData) {
     // Mostly clear
     1: { emoji: isDay ? "🌤️" : "🌖", description: "Majoritairement dégagé" },
     // Partly cloudy
-    2: { emoji: isDay ? "⛅" : "🌑", description: "Partiellement nuageux" },
+    2: { emoji: isDay ? "⛅" : "🌒", description: "Partiellement nuageux" },
     // Cloudy
-    3: { emoji: "☁️", description: "Nuageux" },
+    3: { emoji: isDay ? "☁️" : "🌑", description: "Nuageux" },
     // Fog
     45: { emoji: "🌫️", description: "Brouillard" },
     // Freezing Fog
