@@ -21,7 +21,8 @@ export const projectsData: CardWithIDType[] = [
     id: 3,
     title: "WhatsNumber",
     url: "https://whatsnumber.netlify.app/",
-    description: "Discutez sur whatsapp sans ajouter de contact.",
+    description:
+      "Parler sur whatsapp avec un numéro sans l'ajouter dans vos contacts.",
     image: "/icons/projects/whatsnumber.jpg",
     color: "",
   },
@@ -40,5 +41,14 @@ export const projectsData: CardWithIDType[] = [
     url: "https://thiefaine.netlify.app",
     image: "/icons/projects/portfolio-v1.jpg",
     color: "",
+  },
+  {
+    id: 6,
+    title: "GitHub",
+    description: "Voici le lien vers mon GitHub.",
+    url: "https://github.com/sthiefaine",
+    image: "/icons/projects/github.png",
+    color: "",
+    rel: "noreferrer noopener",
   },
 ];

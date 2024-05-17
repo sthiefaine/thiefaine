@@ -19,7 +19,7 @@ export default function Header() {
         />
         <span className={styles.informations}>
           <h1 className={styles.title}>Thiefaine Simonnou</h1>
-          <p className={styles.description}>développeur web</p>
+          <p className={styles.description}>Développeur web</p>
         </span>
       </Link>
     </header>
