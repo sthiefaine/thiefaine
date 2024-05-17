@@ -18,7 +18,9 @@ export default async function Home() {
         style={{
           position: "fixed",
           bottom: "2px",
-          marginLeft: "20%",
+          width: "100%",
+          maxWidth: "500px",
+          textAlign: "center",
         }}
         href="https://storyset.com/business"
       >
