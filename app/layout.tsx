@@ -5,13 +5,41 @@ import "./globals.css";
 import "./variables.css";
 import "./index.css";
 import Header from "@/components/Header/header";
-import { Tech } from "@/components/Tech/tech";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Thiefaine - Portfolio",
-  description: "Thiefaine portfolio developpeur nextjs react",
+  description: "Thiefaine portfolio développeur Next.js React",
+  keywords:
+    "Thiefaine, portfolio, développeur, Next.js, React, JavaScript, développeur web",
+  author: "Thiefaine",
+  openGraph: {
+    type: "website",
+    locale: "fr_FR",
+    url: "https://thiefaine.dev",
+    title: "Thiefaine - Portfolio",
+    description: "Thiefaine portfolio développeur Next.js React",
+    images: [
+      {
+        url: "https://thiefaine.dev/thief-head.png",
+        width: 800,
+        height: 600,
+        alt: "Thiefaine Portfolio",
+      },
+    ],
+    site_name: "Thiefaine Portfolio",
+  },
+  additionalMetaTags: [
+    {
+      name: "viewport",
+      content: "width=device-width, initial-scale=1",
+    },
+    {
+      name: "theme-color",
+      content: "#317EFB",
+    },
+  ],
 };
 
 export default function RootLayout({
