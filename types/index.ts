@@ -4,7 +4,7 @@ export type CardType = {
   image?: string;
   url?: string;
   color?: string;
-  tr?: string;
+  transi?: string;
   rel?: string;
 };
 

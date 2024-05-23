@@ -34,6 +34,12 @@
   color: var(--color-white);
 }
 
+@media (max-width: 400px) {
+  .title {
+    font-size: calc(1.2em - 1vw);
+  }
+}
+
 @keyframes background {
   0%,
   100% {

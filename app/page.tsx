@@ -14,16 +14,7 @@ export default async function Home() {
         ))}
         <Weather />
       </main>
-      <a
-        style={{
-          position: "fixed",
-          bottom: "2px",
-          width: "100%",
-          maxWidth: "500px",
-          textAlign: "center",
-        }}
-        href="https://storyset.com/business"
-      >
+      <a style={{ display: "none" }} href="https://storyset.com/business">
         Business illustrations by Storyset
       </a>
     </>

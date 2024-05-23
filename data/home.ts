@@ -7,7 +7,7 @@ export const cardList: CardWithIDType[] = [
     title: "Contact",
     url: "/contact",
     description: "Email, WhatsApp, LinkedIn.",
-    tr: "contact",
+    transi: "contact",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ export const cardList: CardWithIDType[] = [
     title: "Projets",
     url: "/projects",
     description: "Réalisations en développement web.",
-    tr: "projects",
+    transi: "projects",
   },
   {
     id: 3,
@@ -23,6 +23,6 @@ export const cardList: CardWithIDType[] = [
     title: "CV",
     url: "/cv",
     description: "Afficher et télécharger",
-    tr: "cv",
+    transi: "cv",
   },
 ];

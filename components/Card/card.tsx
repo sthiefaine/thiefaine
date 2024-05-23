@@ -13,7 +13,7 @@ export function Card({
   url,
   color,
   children,
-  tr,
+  transi,
   rel,
 }: CardType & { children?: React.ReactNode }) {
   return (
@@ -44,7 +44,7 @@ export function Card({
           )}
           {children ?? null}
           <span className={style.informations}>
-            <h1 className={`${style.title} ${tr ?? null}`}>{title}</h1>
+            <h1 className={`${style.title} ${transi ?? null}`}>{title}</h1>
             {description && <p className={style.text}>{description}</p>}
           </span>
         </section>{" "}
