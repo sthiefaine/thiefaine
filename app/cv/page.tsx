@@ -9,6 +9,14 @@ export default async function CV() {
   return (
     <>
       <PageTitle>CV</PageTitle>
+      <Card
+        title="Télécharger"
+        url={urlCv}
+        rel="noopener noreferrer"
+        description="Télécharger le CV au format pdf"
+      >
+        <Download />
+      </Card>
       <main
         style={{
           display: "flex",
@@ -19,14 +27,6 @@ export default async function CV() {
       >
         <Image src={urlCvImage} width={400} height={300} alt="CV" />
       </main>
-      <Card
-        title="Télécharger"
-        url={urlCv}
-        rel="noopener noreferrer"
-        description="Télécharger le CV au format pdf"
-      >
-        <Download />
-      </Card>
     </>
   );
 }

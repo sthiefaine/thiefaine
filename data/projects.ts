@@ -2,11 +2,19 @@ import { CardWithIDType } from "@/types";
 
 export const projectsData: CardWithIDType[] = [
   {
-    id: 1,
+    id: 0,
     title: "2hdp+",
     url: "https://2hdp.vercel.app",
     description: "2H de perdues en version améliorée.",
     image: "/icons/projects/2hdp.jpg",
+    color: "",
+  },
+  {
+    id: 1,
+    title: "Tramway Montpellier",
+    url: "https://tram-montpellier.vercel.app/",
+    description: "Infos trafic tramway de Montpellier.",
+    image: "/icons/projects/tram-montpellier.jpg",
     color: "",
   },
   {
