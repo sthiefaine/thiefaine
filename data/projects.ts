@@ -18,6 +18,14 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
+    id: 7,
+    title: "MapMoji",
+    url: "https://mapmoji.vercel.app/",
+    description: "Visualisez la météo avec des emojis sur une carte. 🌄",
+    image: "/icons/projects/mapmoji.jpg",
+    color: "",
+  },
+  {
     id: 2,
     title: "Mastermind",
     url: "https://mastermind-react.netlify.app/",
