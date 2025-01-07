@@ -11,6 +11,8 @@ import { CardWeather } from "../../Card/cardWeather";
 import { Suspense } from "react";
 
 export async function Weather() {
+  const headersList = await headers();
+
   const geoMock = {
     latitude: 48.8566,
     longitude: 2.3522,
@@ -18,14 +20,16 @@ export async function Weather() {
     country: "France",
   };
 
+  // https://vercel.com/docs/edge-network/headers/request-headers
   const params = {
-    latitude: headers().get("x-latitude") ?? geoMock.latitude,
-    longitude: headers().get("x-longitude") ?? geoMock.longitude,
-    city: headers().get("x-city") ?? geoMock.city,
-    country: headers().get("x-country") ?? geoMock.country,
+    latitude: headersList.get("x-latitude") ?? geoMock.latitude,
+    longitude: headersList.get("x-longitude") ?? geoMock.longitude,
+    city: headersList.get("x-vercel-ip-city") ?? geoMock.city,
+    country: headersList.get("x-country") ?? geoMock.country,
     current:
       "temperature_2m,relative_humidity_2m,is_day,precipitation,rain,showers,snowfall,weather_code,cloud_cover,wind_speed_10m",
   };
+
   const url = `https://api.open-meteo.com/v1/forecast?latitude=${params.latitude}&longitude=${params.longitude}&current=${params.current}`;
 
   const weather: WeatherData = await fetch(url, { cache: "no-store" }).then(
@@ -54,7 +58,7 @@ export async function Weather() {
     >
       <CardWeather
         emoji={weatherEmoji.emoji}
-        title={params.city}
+        title={decodeURIComponent(params.city)}
         description={
           weatherEmoji.description +
           " " +
