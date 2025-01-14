@@ -10,6 +10,13 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
+    id: 8,
+    title: "Year Progress",
+    url: "https://yearprogress-beryl.vercel.app/",
+    description: "Progression de l'année en cours.",
+    image: "/icons/projects/yearprogress.png",
+  },
+  {
     id: 1,
     title: "Tramway Montpellier",
     url: "https://tram-montpellier.vercel.app/",
