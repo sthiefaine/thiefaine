@@ -54,6 +54,7 @@ export default function RootLayout({
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/thief-head.png" />
+          <meta name="google-site-verification" content="dEefzALe9pOh3tZfmpZG7yoMJmYaudnQshLvjUhBlbk" />
         </head>
         <body className={inter.className}>
           <Header />
