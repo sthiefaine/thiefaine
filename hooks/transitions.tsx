@@ -3,8 +3,10 @@ import { useState, useCallback } from "react";
 import { flushSync } from "react-dom";
 
 declare global {
-  interface Document {
-    startViewTransition?: (callback: () => void) => void;
+  namespace NodeJS {
+    interface Document {
+      startViewTransition?: (callbackOptions?: ViewTransitionUpdateCallback | undefined) => ViewTransition;
+    }
   }
 }
 

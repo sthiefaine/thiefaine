@@ -1,19 +1,33 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function middleware(request: NextRequest) {
-  if (
-    request.geo?.latitude &&
-    request.geo?.longitude &&
-    request.geo?.country &&
-    request.geo?.city
-  ) {
+interface ExtendedNextRequest extends NextRequest {
+  geo?: {
+    latitude?: string;
+    longitude?: string;
+    country?: string;
+    city?: string;
+    region?: string;
+  };
+}
+
+export function middleware(request: ExtendedNextRequest) {
+  // Destructure geo information with optional chaining
+
+  const { geo: { latitude, longitude, country, city } = {} } = request;
+
+  // Check if all required geo information is present
+  if (latitude && longitude && country && city) {
     const response = NextResponse.next();
 
-    response.headers.set("x-latitude", request.geo.latitude);
-    response.headers.set("x-longitude", request.geo.longitude);
-    response.headers.set("x-country", request.geo.country);
-    response.headers.set("x-city", request.geo.city);
+    // Safely set headers with proper encoding
+    response.headers.set("x-latitude", String(latitude));
+    response.headers.set("x-longitude", String(longitude));
+    response.headers.set("x-country", encodeURIComponent(country));
+    response.headers.set("x-city", encodeURIComponent(city));
 
     return response;
   }
+
+  // Optional: Return the original request if geo data is incomplete
+  return NextResponse.next();
 }

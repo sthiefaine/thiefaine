@@ -43,7 +43,7 @@ export async function Weather() {
       fallback={
         <CardWeather
           emoji={weatherEmojiMock.emoji}
-          title={geoMock.city}
+          title={decodeURIComponent(params.city)}
           description={
             weatherEmojiMock.description +
             " " +
