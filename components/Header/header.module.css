@@ -13,7 +13,7 @@
   border-radius: 50%;
   overflow: hidden;
   background-image: radial-gradient(#fff, rgba(0, 0, 0, 0));
-  animation: background 8s ease-in infinite;
+  animation: background 6s ease-in infinite;
 }
 
 .informations {

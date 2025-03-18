@@ -10,6 +10,22 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
+    id: 9,
+    title: "TaM API Alerts",
+    url: "https://x-notif-tam.vercel.app/",
+    description: "API pour les alertes des transports publiques de Montpellier TaM API.",
+    image: "/icons/projects/TaMAlertsAPI.jpg",
+    color: "",
+  },
+  {
+    id: 10,
+    title: "X notif TaM Alerts",
+    url: "https://x.com/AlertsTam50044",
+    description: "Notification sur X des alertes des transports publiques de Montpellier.",
+    image: "/icons/projects/x-notif-TaM.jpg",
+    color: "",
+  },
+  {
     id: 8,
     title: "Year Progress",
     url: "https://yearprogress-beryl.vercel.app/",
