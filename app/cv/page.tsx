@@ -4,8 +4,8 @@ import PageTitle from "@/components/PageTitle/pageTitle";
 import { Download } from "lucide-react";
 import Image from "next/image";
 export default async function CV() {
-  const urlCvImage = "/doc/CV_SIMONNOU-Thiefaine.webp";
-  const urlCv = "/doc/CV_SIMONNOU-Thiefaine.pdf";
+  const urlCvImage = "/doc/CV_Simonnou-Thiefaine_developpeur.png";
+  const urlCv = "/doc/CV_Simonnou-Thiefaine_developpeur.pdf";
   return (
     <>
       <PageTitle>CV</PageTitle>
