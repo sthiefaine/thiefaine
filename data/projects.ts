@@ -18,6 +18,14 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
+    id: 11,
+    title: "Montpellier Sabines Bus",
+    url: "https://montpellier-bus.vercel.app/",
+    description: "Afficher les bus de la gare routière Sabines de Montpellier en temps réel.",
+    image: "/icons/projects/montpellier-bus.jpg",
+    color: "",
+  },
+  {
     id: 10,
     title: "X notif TaM Alerts",
     url: "https://x.com/AlertsTam50044",
