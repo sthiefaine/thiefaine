@@ -6,12 +6,17 @@ import { Weather } from "@/components/(server)/weather/weather";
 import { Suspense } from "react";
 import { WeatherSkeleton } from "@/components/(server)/weather/weatherSkeleton";
 
+const getData = async () => {
+  return cardList;
+};
+
 export default async function Home() {
+  const data = await getData();
   return (
     <>
       <Tech />
       <main>
-        {cardList.map((card) => (
+        {data.map((card) => (
           <Card key={card.id + card.title} {...card} />
         ))}
         <Suspense fallback={<WeatherSkeleton />}>

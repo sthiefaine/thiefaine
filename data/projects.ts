@@ -10,6 +10,14 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
+    id: 12,
+    title: "Montpellier Maisons Pour Tous",
+    url: "https://montpellier-maisons-pour-tous.vercel.app/",
+    description: "Les maisons pour tous de Montpellier.",
+    image: "/icons/projects/montpellier-maisons-pour-tous.jpg",
+    color: "",
+  },
+  {
     id: 9,
     title: "TaM API Alerts",
     url: "https://x-notif-tam.vercel.app/",
