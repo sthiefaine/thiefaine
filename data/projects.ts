@@ -82,14 +82,6 @@ export const projectsData: CardWithIDType[] = [
     color: "",
   },
   {
-    id: 4,
-    title: "Ricard Nuancier",
-    url: "https://ricard-nuancier.vercel.app/",
-    description: "Nuancier de couleurs (P3 color).",
-    image: "/icons/projects/ricard-nuancier.jpg",
-    color: "",
-  },
-  {
     id: 5,
     title: "PortFolio V1",
     description: "Première version de mon portfolio.",
